@@ -4,25 +4,16 @@ Modified by me from the original, found at https://github.com/istepaniuk/gilded-
 
 ## Installing
 
-Clone the repo and cd to the project directory.
-You should have [Python 3](https://www.python.org/downloads/) and  [pip](https://pip.pypa.io/en/stable/installing/) installed.  Making a new [virtualenv](https://virtualenv.pypa.io/en/stable/) is nice also :)
-
-```bash
-pip install -r requirements.txt
-```
+Open the repo in vscode with the devcontainer extension installed and click "re-open in container".
 
 ## Running the tests
 
 This kata's test tools include
 
-0. `nosetest` for running your Python tests from the command line
-1. `rednose` for colorizing the test output and making it easier to read
-2. `nosewatch` to re-run tests automatically as you change your code or tests
-3. `coverage` to show you how much of your code is being tested.
+1. `ptw` for running tests continuously
+2. `coverage` to show you how much of your code is being tested.
 
-```bash
-./test.sh        // runs nosetests --cover-branches --with-coverage --rednose --with-watch --cover-erase --cover-html
-```
+Run `poetry run ptw` to run the test suite.
 
 The final test, which relates to a new feature, is skipped.  Remove the `@skip` annotation in `gilded-rose-test.py` to enable it.
 

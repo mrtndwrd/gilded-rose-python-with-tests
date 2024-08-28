@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "gilded_rose"
+version = "0.1.0"
+description = ""
+authors = ["matthewmorgan", "Maarten de Waard <maarten.dewaard@nslogin.nl>"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.dev-dependencies]
+coverage = "*"
+pytest = "*"
+pytest-watch = "*"
